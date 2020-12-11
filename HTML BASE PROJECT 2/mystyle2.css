@@ -1,0 +1,104 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: arial;
+}
+.navbar{
+	display: flex;
+}
+.robo{
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 14px 28px;
+	color: black;
+	transition-property: color;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+}
+.robo:hover{
+	color: grey;
+}
+#toggle{
+	display: none;
+}
+.togglearea{
+	color: blue;
+	display: flex;
+	justify-content: flex-start;
+}
+.togglearea label{
+	background-color: black;
+	height: 45px;
+	width: 45px;
+	cursor: pointer;
+}
+span{
+	position: absolute;
+	color: white;
+	left: 10px;
+	top: 7px;
+	font-size: 21px;
+}
+.togglearea{
+	display: none;
+}
+.wrapper{
+	border: 0px solid;
+	height: 70px;
+	width: 500px;
+	margin-left: 300px;
+	margin-top: 30px;
+	background-color: black;
+}
+.head1{
+	color: white;
+	text-align: center;
+	padding-top: 15px;
+}
+.name{
+	border: 1px solid;
+	margin-left: 34%;
+	height: 40px;
+	width: 300px;
+	font-size: 18px;
+	transition-property: background-color,color;
+	transition-duration: 1s,1s;
+	transition-timing-function: ease;
+}
+.nami{
+	border: 1px solid;
+	margin-left: 30%;
+	height: 100px;
+	width: 400px;
+	font-size: 18px;
+	transition-property: background-color,color;
+	transition-duration: 1s,1s;
+	transition-timing-function: ease;
+}
+.name:hover{
+	background-color: grey;
+	color: white;
+}
+.nami:hover{
+	background-color: grey;
+	color: white;
+}
+img{
+	cursor: pointer;
+}	
+@media (max-width: 700px){
+	.navbar{
+		display: none;
+		flex-direction: column;
+	}
+	#toggle:checked + .navbar
+	{
+		display: flex;
+	}
+	.togglearea{
+		display: flex;
+	}
+}

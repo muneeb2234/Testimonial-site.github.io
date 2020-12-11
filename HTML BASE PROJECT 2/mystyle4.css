@@ -1,0 +1,108 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: arial;
+}
+.navbar{
+	display: flex;
+}
+.robo{
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 14px 28px;
+	color: black;
+	transition-property: color;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+}
+.robo:hover{
+	color: grey;
+}
+#toggle{
+	display: none;
+}
+.togglearea{
+	color: blue;
+	display: flex;
+	justify-content: flex-start;
+}
+.togglearea label{
+	background-color: black;
+	height: 45px;
+	width: 45px;
+	cursor: pointer;
+}
+span{
+	position: absolute;
+	color: white;
+	left: 10px;
+	top: 7px;
+	font-size: 21px;
+}
+.togglearea{
+	display: none;
+}
+.wrapper{
+	border: 0px solid;
+	height: 700px;
+	width: 900px;
+	display: grid;
+	grid-template-columns: 300px 600px;
+	margin-left: 10%;
+}
+.side1{
+	margin-left: 03%;
+}
+.kox{
+	margin-top: 40%;
+	margin-left: 10px;
+	width: 300px;
+	height: 500px;
+}
+.side2{
+	padding: 20px;
+	background-image: url("image/1.png");
+	height: 500px;
+}
+.text{
+	font-size: 14px;
+	text-align: justify;
+	word-break: break-all;
+	font-style: italic;
+}
+.row{
+	border: 2px solid green;
+	height: 150px;
+	width: 200px;
+	margin-left: 15%;
+	margin-top: 20px;
+	background-color: black;
+}
+.row1{
+	border: 2px solid purple;
+	height: 130px;
+	width: 180px;
+	margin-top: 9px;
+	margin-left: 9px;
+}
+.fox{
+	height: 130px;
+	width: 180px;
+	cursor: pointer;
+}
+@media (max-width: 700px){
+	.navbar{
+		display: none;
+		flex-direction: column;
+	}
+	#toggle:checked + .navbar
+	{
+		display: flex;
+	}
+	.togglearea{
+		display: flex;
+	}
+}

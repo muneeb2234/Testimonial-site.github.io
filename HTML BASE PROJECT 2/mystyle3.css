@@ -1,0 +1,95 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: arial;
+}
+.navbar{
+	display: flex;
+}
+.robo{
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 14px 28px;
+	color: black;
+	transition-property: color;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+}
+.robo:hover{
+	color: grey;
+}
+#toggle{
+	display: none;
+}
+.togglearea{
+	color: blue;
+	display: flex;
+	justify-content: flex-start;
+}
+.togglearea label{
+	background-color: black;
+	height: 45px;
+	width: 45px;
+	cursor: pointer;
+}
+span{
+	position: absolute;
+	color: white;
+	left: 10px;
+	top: 7px;
+	font-size: 21px;
+}
+.togglearea{
+	display: none;
+}
+.wrapper{
+	border: 10px solid;
+	height: 300px;
+	width: 600px;
+	margin-left: 20%;
+	margin-top: 10%;
+}
+.ewq{
+	height: 300px;
+	width: 600px;
+}
+.row{
+	border: 0px solid;
+	height: 600px;
+	width: 600px;
+	margin-left: 20%;
+	margin-top: 2%;
+}
+.head1{
+	width: 400px;
+	font-size: 20px;
+	margin-left: 100px;
+}
+.text{
+	font-size: 14px;
+	border: 0px solid;
+	
+	text-align: justify;
+	word-break: break-all;
+	font-style: italic;
+	padding: 5px;
+}
+img{
+	cursor: pointer;
+}
+@media (max-width: 700px){
+	.navbar{
+		display: none;
+		flex-direction: column;
+	}
+	#toggle:checked + .navbar
+	{
+		display: flex;
+	}
+	.togglearea{
+		display: flex;
+	}
+}
